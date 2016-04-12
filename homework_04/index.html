@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        html, body, div, span, ul, li {
+            margin : 0px;
+            padding : 0px; 
+        }
+        
+        #header{
+            margin-top: 10px;
+        }
+        
+        input[type='button']{
+            background-color : #97BF0E;
+            color : #FFFFFF;
+            border-radius : 12px;
+        }
+        
+        #cancel-button {
+            background-color : #FFFFFF;   
+            color : #97BF0E;
+            border : 1px solid #97BF0E;
+        }
+        
+        .comment-author {
+            color : #0098EC;
+        }
+        
+        .comment-item {
+            margin-bottom : 10px;
+        }       
+        
+        .comment-content{
+            margin-bottom : 20px;
+        }
+        
+        #main-buttons {
+            margin-right : 50%;
+        }
+        
+        li {list-style-type : none;}
+        
+        textarea {
+            resize : none;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        li {
+            padding : 10px;
+            border-bottom : 1px solid black;
+            
+        }
+        
+        li.selected {
+            background-color :#97BF0E;
+            color : #FFFFFF;  
+        }
+        
+        #course-title {
+            color : #97BF0E;
+        }
+        
+        hr {
+            border: 1px solid #C3C3C3;
+        }
+       
+        /*#comments-title {
+            margin-left:15px;
+        }
+        
+        #comment-field, #comment-field-buttons {
+            margin-left: 15px;
+        }*/
+        
+        #main-wrapper>div , #comment-item>div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header" class="col col-lg-12">
+            <div id="main-buttons" class="pull-right">
+                <input type="button" value="Вход" class="btn">
+                <input type="button" value="Регистрация"  class="btn">
+            </div>
+        </div>
+        <div id="navigation" class="col col-lg-2">
+            <ul>
+                <li class="selected">КОМПЮТЪРНА ГРАФИКА С WEBGL</li>
+                <li>ПРОГРАМИРАНЕ С GO</li>
+                <li>ПРОГРАМИРАНЕ С RUBY</li>
+                <li>AGILE</li>
+            </ul>
+        </div>
+        <div id="main-wrapper" class="col col-lg-4">
+            <h1 id="course-title">Компютърна графика с WebGL</h1> 
+            <hr />
+            <h3>доц. П. Бойчев</h3>
+            <p>След завършване на курса студентите ще могат да създават тримерни статични изображения и <br />тримерни анимации</p>
+            <div><i>Тип:</i> задължителен избираем</div>
+            <div><i>Курс:</i> 1ви</div>
+            <div><i>Програма:</i> бакалавър</div>
+            <div id="comment-wrapper">
+                <textarea id="comment-field" placeholder="Добавяне на коментар" cols="90" rows="5"></textarea>
+                <div id="comment-field-buttons">
+                    <input id="cancel-button" type="button" value="Отказ"  class="btn"/>
+                    <input type="button" value="Публикуване"  class="btn"/>
+                </div>
+                <div id="comment-list">
+                    <h3 id="comments-title">Коментари</h3>
+                    <div class="comment-item">
+                        <div class="comment-author col col-lg-3">Вили Велева</div>
+                        <div class="comment-date col col-lg-1">07.11.2015</div>
+                        <div class="comment-content col-lg-12">"Препоръчвам записването на курса. Интересни неща се учат, има и освобождаване с реферати."</div>
+                        <div class="col col-lg-12"> <hr /></div>
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-author col col-lg-3">Вили Велева</div>
+                        <div class="comment-date col col-lg-1">07.11.2015</div>
+                        <div class="comment-content col col-lg-12">"Препоръчвам записването на курса. Интересни неща се учат, има и освобождаване с реферати."</div>
+                        <div class="col col-lg-12"> <hr /></div>                    
+                    </div>
+                    <div class="comment-item">
+                        <div class="comment-author col col-lg-3">Вили Велева</div>
+                        <div class="comment-date col col-lg-1">07.11.2015</div>
+                        <div class="comment-content col-lg-12">"Препоръчвам записването на курса. Интересни неща се учат, има и освобождаване с реферати."</div>
+                        <div class="col col-lg-12"> <hr /></div>                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
