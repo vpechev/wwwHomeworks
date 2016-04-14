@@ -5,12 +5,11 @@
 }
 
 .nav li {
-	float: left;
 	width: 160px;
 	position: relative;
 }
 
-.nav li a {
+.nav li a, .nav li span {
 	background: #333;
 	color: #fff;
 	display: block;
@@ -19,7 +18,7 @@
 	border-top: 1px solid #069;
 }
 
-.nav li a:hover {
+.nav li a:hover, .nav li span:hover {
 	color: #069;
 }
 
@@ -38,7 +37,7 @@
 	float: left;
 }
 
-.nav ul a {
+.nav ul a, .nav ul span {
 	display: block;
 	height: 15px;
 	padding: 7px 8px;
@@ -47,6 +46,20 @@
 	border-bottom: 1px solid #222;
 }
 
-.nav ul li a:hover {
+.nav ul li a, .nav ul li span:hover {
 	color: #069;
+}
+
+#main-navigation li {
+    float: left;
+}
+
+
+#side-navigation {
+    margin-top: 50px;
+}
+
+#side-navigation .nav ul{
+    margin-left: 100%;
+    margin-top: -20%;
 }

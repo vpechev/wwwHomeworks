@@ -9,50 +9,73 @@
     <!-- custom js files -->
     <script src="./js/main.js"></script>
     <script src="./js/nav.js"></script>
+    <script src="./js/router.js"></script>
     <!-- custom css files -->
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/mainNavigation.css">
+    <link rel="stylesheet" type="text/css" href="./css/navigation.css">
 </head>
 
 <body>
     <div id="wrapper">
         <div id="header">
-            Some header information
+            
+            <h1>jQuery</h1>
         </div>
 
-        <div class="navigation">
+        <div id="main-navigation" class="navigation">
                 <ul class="nav">
                 <li>
-                    <a href="#">Home</a>
+                    <span>Home</span>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <span>Sources</span>
+                    <ul>
+                        <li><a href="https://api.jquery.com/" target="_blank">Main jQuery api documentation</a></li>
+                        <li><a href="http://www.w3schools.com/jquery/" target="_blank">W3schools</a></li>
+                        <li><a href="http://www.tutorialspoint.com/jquery/" target="_blank">Tutorialspoint</a></li>
+                        <li><a href="https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/09.%20jQuery%20Overview/slides/jQuery-Overview.pdf" target="_blank">Terelik Academy jQuery</a></li>
+                        <li><a href="https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/10.%20jQuery%20Plugins/slides/jQuery-Plugins.pdf" target="_blank">Terelik Academy jQuery plugins</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span id="contacts-link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="section-nav">
+            <div id="side-navigation" class="navigation">
+                <ul class="nav">
+                
+                <li>
+                    <span id="jquery-overview-link">Overview</span>
+                </li>
+                <li>
+                <a href="#">Services</a>
                     <ul>
                         <li><a href="#">Consulting</a></li>
                         <li><a href="#">Sales</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#">About Us</a>
-                    <ul>
-                        <li><a href="#">Company</a></li>
-                        <li><a href="#">Mission</a></li>
-                        <li><a href="#">Contact Information</a></li>
-                    </ul>
-                </li>
+                
             </ul>
         </div>
-        
-        <div id="section-nav">
         </div>
         
         <div id="main-container">
+            <div id="contacts-container" style="display:none">
+                Vladimir Pechev
+                Sofware Engeneering Course 3
+            </div>
             
+            <div id="jquery-overview-container"  style="display:none">
+                some overview text
+            </div>
         </div>
         
         <div id="footer">
-            some footer
+            <img src="http://www.diogocunha.net/images/skill-jquery.png" height="100" width="102">
         </div>       
 
 
