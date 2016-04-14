@@ -12,11 +12,5 @@ $(document).ready(
             }
         );
         
-        var footer_height=$("#footer").height();
-            $("#wrapper").css({
-                'padding-bottom' : footer_height
-        });
     }
-    
-    
 );
