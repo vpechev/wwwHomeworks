@@ -46,7 +46,18 @@ body {
     height:500px;
 }
 
+.allowed-hiding {
+    display:none;
+}
 
+.code-snippet {
+    background-color: rgba(10,10,10,0.5);
+    text-align: left;
+    color: green;
+    float: left;
+    margin-left: 10px;
+    border: 2px solid yellow;
+}
 
 
 

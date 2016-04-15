@@ -26,10 +26,10 @@
         <div id="main-navigation" class="navigation">
                 <ul class="nav">
                 <li>
-                    <span>Home</span>
+                    <span id="home-link">Начало</span>
                 </li>
                 <li>
-                    <span>Sources</span>
+                    <span>Източници</span>
                     <ul>
                         <li><a href="https://api.jquery.com/" target="_blank">Main jQuery api documentation</a></li>
                         <li><a href="http://www.w3schools.com/jquery/" target="_blank">W3schools</a></li>
@@ -39,7 +39,7 @@
                     </ul>
                 </li>
                 <li>
-                    <span id="contacts-link">Contacts</a>
+                    <span id="contacts-link">Контакти</a>
                 </li>
             </ul>
         </div>
@@ -49,7 +49,13 @@
                 <ul class="nav">
                 
                 <li>
-                    <span id="jquery-overview-link">Overview</span>
+                    <span id="jquery-overview-link">Общ преглед</span>
+                </li>
+                <li>
+                    <span id="jquery-installation-link">Инсталация</span>
+                </li>
+                <li>
+                    <span id="jquery-selectors-link">Селектори</span>
                 </li>
                 <li>
                 <a href="#">Services</a>
@@ -65,12 +71,12 @@
         </div>
         
         <div id="main-container">
-            <div id="contacts-container" style="display:none">
+            <div id="contacts-container" class="allowed-hiding">
                 Vladimir Pechev
                 Sofware Engeneering Course 3
             </div>
             
-            <div id="jquery-overview-container"  style="display:none">
+            <div id="jquery-overview-container" class="allowed-hiding">
                 <p>
                     <h2>Какво е jQuery</h2>
                     jQuery e крос-браузърна JavaScript библиотека. 
@@ -92,6 +98,88 @@
                     поддържа от голяма общост от програмисти.
                 </p>
             </div>
+
+            <div id="jquery-installation-container" class="allowed-hiding">
+                <h2>Как да добавим jQuery към нашия код?</h2>
+                <p>
+                    Инсталацията на JQuеry не изисква почти никакви усилия. Имаме различни подходи. Можем сами да хостваме сорс кода на библиотеката или да използваме алтернатива, например CDN. Aко сме избрали да е при нас, всичко, което трябва да направим е да свалим файловете на библиотеката от http://www.jquery.com и да ги добавим към нашия проект. Ако използваме външен провайдър просто трябва да копираме предоставения линк. Например: http://ajax.microsoft.com/ajax/jquery/jquery-2.1.1.min.js (CDN на Гугъл).
+                </p>
+            </div>
+
+            <div id="jquery-selectors-container" class="allowed-hiding">
+                <h2>Селектори и манипулация на DOM</h2>
+                <p>
+                    Избирането на DOM елементи много наподобява това при чистият Javascript
+                    Избиране на елементи чрез CSS селектори
+                    Например querySelectorAll
+                    $(selector)
+                    Избиране на елементи чрез име на таг
+                    $("div") //document.querySelectorAll("div");
+                    Избиране на елементи чрез име на class
+                    $(".menu-item")
+                    //document.querySelectorAll(".menu-item");
+                    Избиране на елементи чрез id елемент
+                    $("#navigation")
+                    Избиране на елементи чрез комбинация от различни селектори
+                    $("ul.menu li")
+
+                    <br />
+                    В повечето случаи избирането на елементи с jQuеry връща колекция от елементи дори в случаите, когато селектираният контейнер съдържа един единствен елемент. Резултатното множество може да се запази в променлива или пък да се използва още в момента на избирането. И в двата случая използваме получените елементи по един и същ начин без значение от техния брой; 
+                    
+                    More at: http://learn.jquery.com/using-jquerycore/selecting-elements/ 
+                </p>
+
+                <p>
+                    <h2>Манипулация на DOM</h2>
+                    Подобно на чистия JavaScript, jQuery също може да манипулира DOM. Съществуват понятия като "брат" - елемент от същия ред
+                    "родител" - елемент от по-висок ред
+                    "дете" - елемент от по-нисък ред
+                    Някои примерни методи са: jQuery.next(), jQuery.prev() които връщат следващия/предишния брат съответно
+                     Returns an HTML element  Not a [text] node  
+                    <br />
+                    <div class="code-snippet">
+                        &ltul&gt                        <br />
+                            &ltli&gtItem 1&lt/li&gt     <br />
+                            &ltli&gtItem 2&lt/li&gt     <br />
+                            &ltli&gtItem 3&lt/li&gt     <br />
+                        &lt/ul&gt
+                    </div>
+                    <div  class="code-snippet">
+                        var $first = $("li").first(); <br />
+                        log($first);                  <br />
+                        //logs "Item 1"               <br />
+                        log($first.next());           <br />
+                        //logs "Item 2"               
+                    </div>
+
+                    jQuery.parent() - Returns the parent of the element
+                    jQuery.parents(selector) - Returns the first parent that matches the selector
+                    <div class="code-snippet">
+                    &ltdiv id="wrapper"&gt                          <br />
+                        &ltul id="items-list"&gt                    <br />
+                            &ltli&gt Item 1&lt/li&gt                <br />
+                            &ltli&gt Item 2&lt/li&gt                <br />
+                            &ltli class="special"&gt Item 3&lt/li&gt <br />
+                            &ltli&gt Item 4&lt/li&gt                <br />
+                            &lt/ul&gt                               <br />
+                    &lt/div&gt                                      <br />
+                    </div>
+
+                    <div class="code-snippet">
+                        var $node = $(".special");          <br />
+                        $node.parent().attr("id");          <br />
+                        //logs "items-list"                 <br />
+                        $node.parents("div").attr("id");    <br />
+                        //logs "wrapper"                    <br />
+                        $node.parents("#wrapper")           <br />
+                        .attr("id");                        <br />
+                        /logs "wrapper"                 
+                    </div>
+
+                </p>
+            </div>
+
+
         </div>
         
         <div id="footer">
