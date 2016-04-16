@@ -3,6 +3,10 @@ html, body, div, h1, ul, li, p, a {
     padding: 0px;
 } 
 
+body {
+    background-color: rgb(92, 138, 138);
+}
+
 #header, #footer {
     background: #333;
     color: #fff;
@@ -39,25 +43,41 @@ body {
 }
 
 
-#main-container {
-    border: 1px solid red;
-    margin-left: 300px;
-    width: 1000px;
-    height:500px;
+#content-container {
+    background-color: rgb(153, 153, 0);
+    margin-left: 160px;
+    margin-top: 20px;
+    width: 80%;
+    height:80%;
+    overflow-y: auto;
 }
 
 .allowed-hiding {
     display:none;
 }
 
+.code-snippet, .inline-code-snippet {
+    background-color: rgba(0, 153, 132, 0.5);
+    color: #fff;;
+}
+
 .code-snippet {
-    background-color: rgba(10,10,10,0.5);
     text-align: left;
-    color: green;
     float: left;
     margin-left: 10px;
-    border: 2px solid yellow;
+    padding: 10px;
 }
+
+.inline-code-snippet {
+    background-color: rgba(10,10,10,0.5);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*#section-nav {
+    float: left;
+    position: absolute;
+}*/
 
 
 

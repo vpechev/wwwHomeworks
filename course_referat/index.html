@@ -1,12 +1,13 @@
 <!DOCTYPE HMTL>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <!-- jQuery library -->
-    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   
-            integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+    crossorigin="anonymous"></script>
     <!-- custom js files -->
     <script src="./js/main.js"></script>
     <script src="./js/nav.js"></script>
@@ -19,14 +20,20 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            
             <h1>jQuery</h1>
         </div>
 
         <div id="main-navigation" class="navigation">
-                <ul class="nav">
+            <ul class="nav">
+                <li> <span id="home-link">Начало</span> </li>
                 <li>
-                    <span id="home-link">Начало</span>
+                    <span>Свързани теми</span>
+                    <ul>
+                        <li> <span>Javascript</span> </li>
+                        <li> <span>Ajax</span> </li>
+                        <li> <span>Плъгин</span> </li>
+                        <li> <span>ДОМ</span> </li>
+                    </ul>
                 </li>
                 <li>
                     <span>Източници</span>
@@ -38,155 +45,303 @@
                         <li><a href="https://github.com/TelerikAcademy/JavaScript-UI-and-DOM/blob/master/10.%20jQuery%20Plugins/slides/jQuery-Plugins.pdf" target="_blank">Terelik Academy jQuery plugins</a></li>
                     </ul>
                 </li>
-                <li>
-                    <span id="contacts-link">Контакти</a>
-                </li>
+                <li> <span id="contacts-link">Контакти</a> </li>
             </ul>
-        </div>
-        
-        <div id="section-nav">
-            <div id="side-navigation" class="navigation">
-                <ul class="nav">
-                
-                <li>
-                    <span id="jquery-overview-link">Общ преглед</span>
-                </li>
-                <li>
-                    <span id="jquery-installation-link">Инсталация</span>
-                </li>
-                <li>
-                    <span id="jquery-selectors-link">Селектори</span>
-                </li>
-                <li>
-                <a href="#">Services</a>
-                    <ul>
-                        <li><a href="#">Consulting</a></li>
-                        <li><a href="#">Sales</a></li>
-                        <li><a href="#">Support</a></li>
-                    </ul>
-                </li>
-                
-            </ul>
-        </div>
         </div>
         
         <div id="main-container">
-            <div id="contacts-container" class="allowed-hiding">
-                Vladimir Pechev
-                Sofware Engeneering Course 3
-            </div>
-            
-            <div id="jquery-overview-container" class="allowed-hiding">
-                <p>
-                    <h2>Какво е jQuery</h2>
-                    jQuery e крос-браузърна JavaScript библиотека. 
-                    Тя е създадена, за да опростява писането и обработването на динамичен HTML на клиента. 
-                    Тази библиокета е най-известната Javascript библиотека в наши дни. 
-                    Може да се използва безплатно в проекти с отвоен код.
-                    Синтаксисът на jQuery е мн ого лесен за научаване.
-                    Спомага навигирането и избирането на елементи от DOM.
-                    Създава анимации.
-                    Обработва събития.
-                    Също така jQuery предоставя възможността за създаване на собствени плъгини, анимации и теми, които работят със самата библиотека на ниско ниво.
-                    Позволява възможността за създаване на динамични и оптимизирани уеб страници.
-                    Поддържа интеграция с ред на брой среди за разработка. Някои сред тях са: Visual Studio, Visual Studio Code, Eclipse, Sublime Text, WebStorm
-                </p>
-                <p>
-                    <h2> Зашо jQuery е толкова известна? </h2>
-                    jQuery e eдна от най-известните библиотеки в наши дни. Една от причините затова е именно лесното научаване на библиотеката. Още един изключително важен факт е лесното 
-                    разширяване на функционалността на библиотеката. Могат да се създават всякакви плъгини без ограничение. Просто трябва да се имплементира JavaScript функция. Използва се и се 
-                    поддържа от голяма общост от програмисти.
-                </p>
+            <div id="section-nav">
+                <div id="side-navigation" class="navigation">
+                    <ul class="nav">
+                        <li> <span id="jquery-overview-link">Общ преглед</span> </li>
+                        <li> <span id="jquery-installation-link">Инсталация</span> </li>
+                        <li> <span id="jquery-selectors-link">Селектори</span> </li>
+                        <li> <span id="jquery-properties-link">Пропъртита</span> </li>
+                        <li> <span id="jquery-events-link">Събития</span> </li>
+                        <li> <span id="jquery-chaining-link">Навързване</span> </li>
+                        <li> <span id="jquery-ajax-link">Аjax</span> </li>
+                    </ul>
+                </div>
             </div>
 
-            <div id="jquery-installation-container" class="allowed-hiding">
-                <h2>Как да добавим jQuery към нашия код?</h2>
-                <p>
-                    Инсталацията на JQuеry не изисква почти никакви усилия. Имаме различни подходи. Можем сами да хостваме сорс кода на библиотеката или да използваме алтернатива, например CDN. Aко сме избрали да е при нас, всичко, което трябва да направим е да свалим файловете на библиотеката от http://www.jquery.com и да ги добавим към нашия проект. Ако използваме външен провайдър просто трябва да копираме предоставения линк. Например: http://ajax.microsoft.com/ajax/jquery/jquery-2.1.1.min.js (CDN на Гугъл).
-                </p>
-            </div>
+    <div id="content-container">
+        <div id="contacts-container" class="allowed-hiding">
+            Vladimir Pechev Sofware Engeneering Course 3
+        </div>
 
-            <div id="jquery-selectors-container" class="allowed-hiding">
-                <h2>Селектори и манипулация на DOM</h2>
-                <p>
-                    Избирането на DOM елементи много наподобява това при чистият Javascript
-                    Избиране на елементи чрез CSS селектори
-                    Например querySelectorAll
-                    $(selector)
-                    Избиране на елементи чрез име на таг
-                    $("div") //document.querySelectorAll("div");
-                    Избиране на елементи чрез име на class
-                    $(".menu-item")
-                    //document.querySelectorAll(".menu-item");
-                    Избиране на елементи чрез id елемент
-                    $("#navigation")
-                    Избиране на елементи чрез комбинация от различни селектори
-                    $("ul.menu li")
+        <div id="jquery-overview-container" class="allowed-hiding">
+            <p>
+                <h2>Какво е jQuery</h2>
+                <div> 
+                    jQuery e крос-браузърна JavaScript библиотека. Тя е създадена, за да опростява писането и обработването
+                    на динамичен HTML на клиента. Тази библиокета е най-известната Javascript библиотека в наши дни. Може да
+                    се използва безплатно в проекти с отвоен код. Синтаксисът на jQuery е мн ого лесен за научаване. Спомага
+                    навигирането и избирането на елементи от DOM. Създава анимации. Обработва събития. Също така jQuery предоставя
+                    възможността за създаване на собствени плъгини, анимации и теми, които работят със самата библиотека на ниско
+                    ниво. Позволява възможността за създаване на динамични и оптимизирани уеб страници. Поддържа интеграция с
+                    ред на брой среди за разработка. Някои сред тях са: Visual Studio, Visual Studio Code, Eclipse, Sublime Text,
+                    WebStorm
+                </div>
+            </p>
+            <p>
+                <h2> Зашо jQuery е толкова известна? </h2>
+                <div> 
+                    jQuery e eдна от най-известните библиотеки в наши дни. Една от причините затова е именно лесното научаване
+                    на библиотеката. Още един изключително важен факт е лесното разширяване на функционалността на библиотеката.
+                    Могат да се създават всякакви плъгини без ограничение. Просто трябва да се имплементира JavaScript функция.
+                    Използва се и се поддържа от голяма общост от програмисти.
+                </div>
+            </p>
+        </div>
 
+        <div id="jquery-installation-container" class="allowed-hiding">
+            <h2>Как да добавим jQuery към нашия код?</h2>
+            <p>
+                Инсталацията на JQuеry не изисква почти никакви усилия. Имаме различни подходи. Можем сами да хостваме сорс кода на библиотеката
+                или да използваме алтернатива, например CDN. Aко сме избрали да е при нас, всичко, което трябва да направим
+                е да свалим файловете на библиотеката от http://www.jquery.com и да ги добавим към нашия проект. Ако използваме
+                външен провайдър просто трябва да копираме предоставения линк. Например: http://ajax.microsoft.com/ajax/jquery/jquery-2.1.1.min.js
+                (CDN на Гугъл).
+            </p>
+        </div>
+
+        <div id="jquery-selectors-container" class="allowed-hiding">
+            <p>
+                <h2>Селектори и манипулация на DOM</h2> Избирането на DOM елементи много наподобява това при чистият Javascript Избиране на елементи чрез CSS селектори
+                Например querySelectorAll <span class="inline-code-snippet">$(selector)</span> Избиране на елементи чрез
+                име на таг
+                <span class="inline-code-snippet">$("div") //document.querySelectorAll("div");</span> Избиране на елементи
+                чрез име на class <span class="inline-code-snippet">$(".menu-item") //document.querySelectorAll(".menu-item");</span>                Избиране на елементи чрез id елемент <span class="inline-code-snippet">$("#navigation")</span> Избиране на
+                елементи чрез комбинация от различни селектори
+                <span class="inline-code-snippet">$("ul.menu li")</span>
+
+                <br /> В повечето случаи избирането на елементи с jQuеry връща колекция от елементи дори в случаите, когато селектираният
+                контейнер съдържа един единствен елемент. Резултатното множество може да се запази в променлива или пък да
+                се използва още в момента на избирането. И в двата случая използваме получените елементи по един и същ начин
+                без значение от техния брой; More at: http://learn.jquery.com/using-jquerycore/selecting-elements/
+            </p>
+
+            <p>
+                <h2>Манипулация на DOM</h2> Подобно на чистия JavaScript, jQuery също може да манипулира DOM. Съществуват понятия като "брат" - елемент
+                от същия ред "родител" - елемент от по-висок ред "дете" - елемент от по-нисък ред Някои примерни методи са:
+                <span class="inline-code-snippet">Query.next(), jQuery.prev()</span> които връщат следващия/предишния брат
+                съответно  Returns an HTML element  Not a [text] node
+                <br />
+                <div class="code-snippet">
+                    &ltul&gt
+                    <br /> &ltli&gtItem 1&lt/li&gt
+                    <br /> &ltli&gtItem 2&lt/li&gt
+                    <br /> &ltli&gtItem 3&lt/li&gt
+                    <br /> &lt/ul&gt
+                </div>
+                <div class="code-snippet">
+                    var $first = $("li").first();
+                    <br /> log($first);
+                    <br /> //logs "Item 1"
+                    <br /> log($first.next());
+                    <br /> //logs "Item 2"
+                </div>
+
+                <span class="inline-code-snippet">jQuery.parent()</span> - Returns the parent of the element jQuery.parents(selector)
+                - Returns the first parent that matches the selector
+                <div class="code-snippet">
+                    &ltdiv id="wrapper"&gt
+                    <br /> &ltul id="items-list"&gt
+                    <br /> &ltli&gt Item 1&lt/li&gt
+                    <br /> &ltli&gt Item 2&lt/li&gt
+                    <br /> &ltli class="special"&gt Item 3&lt/li&gt
+                    <br /> &ltli&gt Item 4&lt/li&gt
+                    <br /> &lt/ul&gt
+                    <br /> &lt/div&gt
                     <br />
-                    В повечето случаи избирането на елементи с jQuеry връща колекция от елементи дори в случаите, когато селектираният контейнер съдържа един единствен елемент. Резултатното множество може да се запази в променлива или пък да се използва още в момента на избирането. И в двата случая използваме получените елементи по един и същ начин без значение от техния брой; 
-                    
-                    More at: http://learn.jquery.com/using-jquerycore/selecting-elements/ 
-                </p>
+                </div>
 
-                <p>
-                    <h2>Манипулация на DOM</h2>
-                    Подобно на чистия JavaScript, jQuery също може да манипулира DOM. Съществуват понятия като "брат" - елемент от същия ред
-                    "родител" - елемент от по-висок ред
-                    "дете" - елемент от по-нисък ред
-                    Някои примерни методи са: jQuery.next(), jQuery.prev() които връщат следващия/предишния брат съответно
-                     Returns an HTML element  Not a [text] node  
+                <div class="code-snippet">
+                    var $node = $(".special");
+                    <br /> $node.parent().attr("id");
+                    <br /> //logs "items-list"
+                    <br /> $node.parents("div").attr("id");
+                    <br /> //logs "wrapper"
+                    <br /> $node.parents("#wrapper")
+                    <br /> .attr("id");
+                    <br /> /logs "wrapper"
+                </div>
+            </p>
+
+            <p>
+                <h2>Промяна на DOM</h2>
+                <h3>Добавяне и промяна на DOM елементи</h3> С jQuery много лесно и бързо можем да добавяме елементи към DOM.
+                <span class="inline-code-snippet">jQuery.appendTo() jQuery.prependTo() jQuery.append()
+                jQuery.prepend()</span>
+                <div class="code-snippet">
+                    $('&ltul&gt&ltli&gtHello&lt/li&gt&lt/ul&gt').appendTo('body'); $("body").prepend("&lth1&gtheader&lt/h1&gt");
+                </div>
+                Създаването на нов елемент също е лесно
+                <div class="code-snippet">
+                    var $divElement = $('&ltdiv&gt'); var $anotherDivElement = $('&ltdiv /&gt');
+                </div>
+                Също толкова лесно могат да се премахват съществуващите елементи от DOM // Before
+                <div id="code-snippet">
+                    &ltdiv&lt &ltp>Red&lt/p&gt &ltp>Green&lt/p&gt &lt/div&gt // Removing elements $('p').remove(); Removing Elements // After
+                    &ltdiv&gt &lt/div&gt
+                </div>
+
+                Избраните с jQuery елементи не са чисти DOM елементи. Те са едно разширение и имат допълнителни елементи и пропъртита:
+                <span class="inline-code-snippet">addClass(), removeClass(), toogleClass() on(event, callback)</span> за
+                закачане на събития
+                <span class="inline-code-snippet">animate(), fade()</span> и други Парсване на нормален DOM елемент до съответния
+                jQuery елемент
+                <span class="inline-code-snippet">var content = document.createElement("div"); var $content = $(content);</span>
+            </p>
+        </div>
+
+        <div id="jquery-properties-container" class="allowed-hiding">
+            <p>
+                <h2>Пропъртита</h2> jQuery елементите разширяват нормалните DOM елементи. jQuery предоставя различни методи за промяна на съответните
+                елементи.  <span class="inline-code-snippet">jQuery.css("color", "#f3f")</span>
+                <span class="inline-code-snippet">jQuery.html()</span> returns the innerHTML
+                <span class="inline-code-snippet">jQuery.html(content)</span>задава стойност на innerHTML
+                <span class="inline-code-snippet">jQuery.text(content)</span> задава стихбист на innerHTML като ескейпва
+                съдържанието
+            </p>
+        </div>
+
+        <div id="jquery-events-container" class="allowed-hiding">
+            <p>
+                <h2>Събития</h2> jQuery поддържа удобен начин за закачане, съответно и откачане, от събития. Един от основните плюсове се
+                състои в това, че работи във всички браузъри. Просто трябва да използваш методите on() и off();
+                <div class="code-snippet">
+                    function onButtonClick(){
+                    <br /> $(".selected").removeClass("selected");
+                    <br /> $(this).addClass("selected");
+                    <br /> }
+                    <br /> $("a.button").on("click", onButtonClick)
+                </div>
+
+                <div>
+                    Оптимизация на събитията Събитията могат да се добавят на елемента, родител. единственото е, че съществува малка разлика в синтаксиса.
+                </div>
+                
+                <div class="code-snippet">
+                    function onButtonClick(){
+                    <br /> $(".selected").removeClass("selected");
+                    <br /> $(this).addClass("selected");
+                    <br /> }
+                    <br /> $("ul").on("click", "li", onListItemClick)
+                </div>
+            </p>
+        </div>
+
+        <div id="jquery-chaining-container" class="allowed-hiding">
+            <p>
+                <h2>Навързване</h2>
+                <div> 
+                    Съществува парадигма за навързването на елементи, която гласи: "Ако методът трябва да връща резултат, няма
+                    проблем нека го върне. Ако методът не трябва да връща резултат, то тогава трябва да върне this" jQuery имплементира
+                    тази парадигма, затова методите могат да се навързват един с друг
+                </div>
+                <div class="code-snippet">
+                    $('
+                    <button />') .addClass('btn-success') .html('Click me for success') .on('click', onSuccessButtonClick) .appendTo(document.body);
+                </div>
+            </p>
+        </div>
+
+        <div id="jquery-ajax-container" class="allowed-hiding">
+            <p>
+                <h2>АJAX</h2> 
+                <div>
+                    Ajax (съкращение на Asynchronous JavaScript and XML) е похват в уеб разработките за създаване на интерактивни
+                    уеб приложения. Предимството на Ajax е, че посредством използването му уеб страниците се зареждат по-бързо.
+                    Посредством асинхронен обмен на малки порции данни „зад кадър“ могат да се променят само частично информации
+                    на уеб страницата. По този начин се намалява количеството информация, която се трансферира между сървъра
+                    и клиента. Асинхронността позволява да не бъде необходимо да се презарежда цялата страница отново. По този
+                    начин се повишава интерактивността, скоростта и функционалността на страниците. jQuery осигурява някои методи
+                    за AJAX <span class="inline-code-snippet">jQuery.ajax(options)</span> – HTTP заявка с пълен контрол (хедъри,
+                    данни, метод, и др.)
+                </div>
+                <span class="inline-code-snippet">jQuery.get(url)</span> – HTTP GET заявка
+                <span class="inline-code-snippet">jQuery.post(url)</span> – HTTP POST заявка
+                <span class="inline-code-snippet">jQuery(selector).load(url)</span> – зарежда съдържанието от линка, който
+                е в избрания елемент
+            </p>
+        </div>
+
+        <div id="jquery-plugins-container" class="allowed-hiding">
+            <p>
+                <h2>Плъгини</h2> 
+                <div>
+                    Плъгинът е просто още един метод(функция), който разширява jQuery като позволява всички jQuery обекти да
+                    използват този метод. Веднъж след като плъгинът е добавен, той може да се използва като jQuery метод например
+                    <span class="inline-code-snippet">addClass(), fadeout() и hide()</span>. jQuery Има много вградени плъгини.
+                    Например: библиотеката за UI контроли jQueryUI. jQuery поддържа много лесен начин за разширяване на функционалността
+                    с плъгини. Единственото което трябва да се направи е да се създаде обикновен метод и да се закачи към jQuery.fn
+                    обект.
+                </div>
+                <div class="code-snippet">
+                    (function($){
+                    <br /> $.fn.zoom = function(){
+                    <br /> var $this = $(this);
+                    <br /> $this.on("mouseover", function() {
+                    <br /> //zoom in element
+                    <br /> });
+                    <br /> $this.on("mouseout", function() {
+                    <br /> //zoom out element
+                    <br /> });
+                    <br /> }
+                    <br /> }(jQuery));
                     <br />
-                    <div class="code-snippet">
-                        &ltul&gt                        <br />
-                            &ltli&gtItem 1&lt/li&gt     <br />
-                            &ltli&gtItem 2&lt/li&gt     <br />
-                            &ltli&gtItem 3&lt/li&gt     <br />
-                        &lt/ul&gt
+                    <br /> $(".image").zoom();
+                </div>
+                <p>
+                    <h2>Навързване на плъгини</h2>
+                    <div>
+                        Навързването на елементи е много полезна функционалност и се поддържа от цялата библиотека. По-добре е да се поддържа и от
+                        нашите плъгини. Много лесно можем да го имплементираме и в нашите плъгини, просто трябва плъгинът
+                        трябва да връща this като резултат.
                     </div>
-                    <div  class="code-snippet">
-                        var $first = $("li").first(); <br />
-                        log($first);                  <br />
-                        //logs "Item 1"               <br />
-                        log($first.next());           <br />
-                        //logs "Item 2"               
-                    </div>
-
-                    jQuery.parent() - Returns the parent of the element
-                    jQuery.parents(selector) - Returns the first parent that matches the selector
-                    <div class="code-snippet">
-                    &ltdiv id="wrapper"&gt                          <br />
-                        &ltul id="items-list"&gt                    <br />
-                            &ltli&gt Item 1&lt/li&gt                <br />
-                            &ltli&gt Item 2&lt/li&gt                <br />
-                            &ltli class="special"&gt Item 3&lt/li&gt <br />
-                            &ltli&gt Item 4&lt/li&gt                <br />
-                            &lt/ul&gt                               <br />
-                    &lt/div&gt                                      <br />
+                    <div class="code=snippet">
+                        (function($){
+                        <br /> $.fn.zoom = function(){
+                        <br /> var $this = $(this);
+                        <br /> $this.on("mouseover", function() {...});
+                        <br /> $this.on("mouseout", function() {...});
+                        <br /> return this;
+                        <br /> }
+                        <br /> }(jQuery));
+                        <br />
+                        <br /> $(".image").zoom().addClass('zoom');
                     </div>
 
-                    <div class="code-snippet">
-                        var $node = $(".special");          <br />
-                        $node.parent().attr("id");          <br />
-                        //logs "items-list"                 <br />
-                        $node.parents("div").attr("id");    <br />
-                        //logs "wrapper"                    <br />
-                        $node.parents("#wrapper")           <br />
-                        .attr("id");                        <br />
-                        /logs "wrapper"                 
+                    Плъгините могат също да поддържат добавянето на аргументи. Единственото, което трябва да направим е да ги подадем като обикновени
+                    параметри на функцията. В случай, че аргументите станат прекалено много, можем да ги подадем като използваме
+                    options обектът. Данните се подават като JSON обект.
+                    <div class="code=snippet">
+                        (function($){
+                        <br /> //zoom with size percents
+                        <br /> $.fn.zoom = function(size){
+                        <br /> var $this = $(this);
+                        <br /> $this.on('mouseover', function() {…});
+                        <br /> $this.on('mouseout'
+                        <br /> , function() {…});
+                        <br /> return $this;
+                        <br /> }
+                        <br /> }(jQuery));
                     </div>
-
                 </p>
-            </div>
-
 
         </div>
-        
+        </p>
+    </div>
+    </div>
+
+
         <div id="footer">
             <img src="http://www.diogocunha.net/images/skill-jquery.png" height="100" width="102">
-        </div>       
-
+        </div>
+    </div>
 
     </div>
 </body>
+
 </html>

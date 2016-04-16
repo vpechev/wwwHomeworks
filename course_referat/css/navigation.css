@@ -46,20 +46,25 @@
 	border-bottom: 1px solid #222;
 }
 
-.nav ul li a, .nav ul li span:hover {
+.nav ul li a:hover, .nav ul li span:hover {
 	color: #069;
 }
 
-#main-navigation li {
+
+#main-navigation .nav li {
     float: left;
 }
 
-
 #side-navigation {
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 #side-navigation .nav ul{
     margin-left: 100%;
     margin-top: -20%;
+}
+
+#main-navigation {
+    margin-left : 160px;
+    margin-bottom: 200px; /*to be removed*/
 }

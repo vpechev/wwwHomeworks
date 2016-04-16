@@ -23,5 +23,8 @@ $(document).ready(function(){
     changeContent("jquery-overview-link", "jquery-overview-container");   
     changeContent("jquery-installation-link", "jquery-installation-container");   
 	changeContent("jquery-selectors-link", "jquery-selectors-container");   
-    
+	changeContent("jquery-properties-link", "jquery-properties-container");   
+	changeContent("jquery-events-link", "jquery-events-container");   
+	changeContent("jquery-chaining-link", "jquery-chaining-container");   
+	changeContent("jquery-ajax-link", "jquery-ajax-container");   
 });
