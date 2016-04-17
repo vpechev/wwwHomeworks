@@ -5,6 +5,11 @@ html, body, div, h1, ul, li, p, a {
 
 body {
     background-color: rgb(92, 138, 138);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color:#333;
+    text-align:center;
+    font-style: italic;
+    font-size: 25px;
 }
 
 #header, #footer {
@@ -15,17 +20,18 @@ body {
 h1 {
   font-family: Helvetica;
   font-weight: 100;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 
-body {
-  color:#333;
-  text-align:center;
-  font-family: arial;
+h2 {
+    font-size: 40px;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
 #main-container {
     /*min-height: 100%;*/
     position: relative;
+    margin-top: 32px;
     width: 100%;
 }
 #wrapper {
@@ -44,12 +50,13 @@ body {
 
 
 #content-container {
-    background-color: rgb(153, 153, 0);
+    background-color: #F5D329;
     margin-left: 160px;
     margin-top: 20px;
     width: 80%;
     height:80%;
     overflow-y: auto;
+    padding: 30px;
 }
 
 .allowed-hiding {
@@ -64,7 +71,7 @@ body {
 .code-snippet {
     text-align: left;
     float: left;
-    margin-left: 10px;
+    margin: 20px;
     padding: 10px;
 }
 
@@ -74,15 +81,20 @@ body {
     margin-right: 10px;
 }
 
-/*#section-nav {
+#section-nav {
     float: left;
-    position: absolute;
-}*/
+    /*display: inline-block;*/
+}
 
+#contacts-container {
+    padding: 200px;
+    padding-left: 500px;
+}
 
-
-
-
+#main-image {
+    width: 100%;
+    height: 100%;   
+}
 
 
 

@@ -2,6 +2,9 @@
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
+	font-style: normal;
+	font-size: 18px;
+	font-family: "Courier New", Courier, monospace;
 }
 
 .nav li {
@@ -33,7 +36,7 @@
 }
 
 .nav ul li {
-	width: 160px;
+	width: 250px;
 	float: left;
 }
 
@@ -55,10 +58,6 @@
     float: left;
 }
 
-#side-navigation {
-    margin-top: 35px;
-}
-
 #side-navigation .nav ul{
     margin-left: 100%;
     margin-top: -20%;
@@ -66,5 +65,7 @@
 
 #main-navigation {
     margin-left : 160px;
-    margin-bottom: 200px; /*to be removed*/
+	position: absolute;
+	z-index: 2;
+    /*margin-bottom: 200px; to be removed*/
 }

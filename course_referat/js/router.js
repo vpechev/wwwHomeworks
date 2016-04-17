@@ -19,6 +19,8 @@ $(document).ready(function(){
         hideAllContentContainers();
     });
 
+	changeContent("home-link", "home-container");   
+
 	changeContent("contacts-link", "contacts-container");   
     changeContent("jquery-overview-link", "jquery-overview-container");   
     changeContent("jquery-installation-link", "jquery-installation-container");   
@@ -26,5 +28,10 @@ $(document).ready(function(){
 	changeContent("jquery-properties-link", "jquery-properties-container");   
 	changeContent("jquery-events-link", "jquery-events-container");   
 	changeContent("jquery-chaining-link", "jquery-chaining-container");   
-	changeContent("jquery-ajax-link", "jquery-ajax-container");   
+	changeContent("jquery-ajax-link", "jquery-ajax-container");
+       
+	changeContent("javascript-link", "common-javascript-container");   
+	changeContent("ajax-link", "common-ajax-container");   
+	changeContent("plugin-link", "common-plugin-container");   
+	changeContent("dom-link", "common-dom-container");   
 });
