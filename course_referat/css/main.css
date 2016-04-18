@@ -7,7 +7,7 @@ body {
     background-color: rgb(92, 138, 138);
     font-family: "Comic Sans MS", cursive, sans-serif;
     color:#333;
-    text-align:center;
+    text-align:left;
     font-style: italic;
     font-size: 25px;
 }
@@ -65,7 +65,8 @@ h2 {
 
 .code-snippet, .inline-code-snippet {
     background-color: rgba(0, 153, 132, 0.5);
-    color: #fff;;
+    color: #fff;
+    white-space: nowrap;
 }
 
 .code-snippet {
@@ -76,7 +77,7 @@ h2 {
 }
 
 .inline-code-snippet {
-    background-color: rgba(10,10,10,0.5);
+    /*background-color: rgba(10,10,10,0.5);*/
     margin-left: 10px;
     margin-right: 10px;
 }
