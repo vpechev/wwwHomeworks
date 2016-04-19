@@ -29,7 +29,9 @@ $(document).ready(function(){
 	changeContent("jquery-events-link", "jquery-events-container");   
 	changeContent("jquery-chaining-link", "jquery-chaining-container");   
     changeContent("jquery-ajax-link", "jquery-ajax-container");
+    changeContent("jquery-plugins-link", "jquery-plugins-container")
 	changeContent("jquery-summary-link", "jquery-summary-container");
+
        
 	changeContent("javascript-link", "common-javascript-container");   
 	changeContent("ajax-link", "common-ajax-container");   
