@@ -71,7 +71,7 @@
                 <div id="contacts-container" class="allowed-hiding">
                     <table>
                         <tr> <td><strong>Разработчик</strong></td> <td><i>Владимир Печев</i></td> </tr>
-                        <tr> <td><strong>Специалност</strong></td> <td> <a href="https://www.uni-sofia.bg/index.php/bul/universitet_t/fakulteti/fakultet_po_matematika_i_informatika2/predstavyane" target="_blank"> <abbr title="Sofia University">Софтуерно инженерство</abbr></a>
+                        <tr> <td><strong>Специалност</strong></td> <td> <a href="https://www.uni-sofia.bg/index.php/bul/universitet_t/fakulteti/fakultet_po_matematika_i_informatika2/predstavyane" target="_blank"> <abbr title="Софийски университет 'Свети Климент Охридски'">Софтуерно инженерство</abbr></a>
                 </em></td> </tr>
                         <tr> <td><strong>Курс</strong></td> <td><i>3</i></td> </tr>
                         <tr> <td><strong>факултетен номер</strong></td> <td><i>61705</td> </tr>
@@ -336,39 +336,41 @@
                             <br /> $(".image").zoom();
                         </div>
                         <p>
-                            <h2>Навързване на плъгини</h2>
-                            <div>
-                                Навързването на елементи е много полезна функционалност и се поддържа от цялата библиотека. По-добре е да се поддържа и от
-                                нашите плъгини. Много лесно можем да го имплементираме и в нашите плъгини. Eдинственото, което трябва да направим е плъгинът да връща <span class="inline-code-snippet">this</span> като резултат.
-                            </div>
-                            <div class="code=snippet">
-                                (function($){
-                                <br /> $.fn.zoom = function(){
-                                <br /> var $this = $(this);
-                                <br /> $this.on("mouseover", function() {...});
-                                <br /> $this.on("mouseout", function() {...});
-                                <br /> return this;
-                                <br /> }
-                                <br /> }(jQuery));
-                                <br />
-                                <br /> $(".image").zoom().addClass('zoom');
-                            </div>
-                            <div>
-                                Плъгините също могат да поддържат добавянето на аргументи. Единственото, което трябва да направим е да ги подадем като обикновени
-                                параметри на функцията. В случай, че аргументите станат прекалено много, можем да ги подадем като използваме <span class="inline-code-snippet">options</span> обектът. 
-                                Данните се подават като JSON обект.
-                            </div>
-                            <div class="code=snippet">
-                                (function($){
-                                <br /> //zoom with size percents
-                                <br /> $.fn.zoom = function(size){
-                                <br /> var $this = $(this);
-                                <br /> $this.on('mouseover', function() {…});
-                                <br /> $this.on('mouseout'
-                                <br /> , function() {…});
-                                <br /> return $this;
-                                <br /> }
-                                <br /> }(jQuery));
+                            <div style="clear:both">
+                                <h2>Навързване на плъгини</h2>
+                                <div>
+                                    Навързването на елементи е много полезна функционалност и се поддържа от цялата библиотека. По-добре е да се поддържа и от
+                                    нашите плъгини. Много лесно можем да го имплементираме и в нашите плъгини. Eдинственото, което трябва да направим е плъгинът да връща <span class="inline-code-snippet">this</span> като резултат.
+                                </div>
+                                <div class="code-snippet">
+                                    (function($){
+                                    <br /> $.fn.zoom = function(){
+                                    <br /> var $this = $(this);
+                                    <br /> $this.on("mouseover", function() {...});
+                                    <br /> $this.on("mouseout", function() {...});
+                                    <br /> return this;
+                                    <br /> }
+                                    <br /> }(jQuery));
+                                    <br />
+                                    <br /> $(".image").zoom().addClass('zoom');
+                                </div>
+                                <div style="clear:both">
+                                    Плъгините също могат да поддържат добавянето на аргументи. Единственото, което трябва да направим е да ги подадем като обикновени
+                                    параметри на функцията. В случай, че аргументите станат прекалено много, можем да ги подадем като използваме <span class="inline-code-snippet">options</span> обектът. 
+                                    Данните се подават като JSON обект.
+                                </div>
+                                <div class="code-snippet">
+                                    (function($){
+                                    <br /> //zoom with size percents
+                                    <br /> $.fn.zoom = function(size){
+                                    <br /> var $this = $(this);
+                                    <br /> $this.on('mouseover', function() {…});
+                                    <br /> $this.on('mouseout'
+                                    <br /> , function() {…});
+                                    <br /> return $this;
+                                    <br /> }
+                                    <br /> }(jQuery));
+                                </div>
                             </div>
                         </p>
                 </div>
